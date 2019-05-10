@@ -1,0 +1,26 @@
+{
+  "name": "what-and-how-much",
+  "version": "1.0.0",
+  "description": "Application to store in what I spend my money and how much destiny for it",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aroldolanderos/what-and-how-much.git"
+  },
+  "author": "Aroldo Landeros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aroldolanderos/what-and-how-much/issues"
+  },
+  "homepage": "https://github.com/aroldolanderos/what-and-how-much#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
