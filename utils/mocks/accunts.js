@@ -6,7 +6,7 @@ const accountMocks = [
 	    "email": "alanbrito@email.com",
 	    "password": "12345678",
 	    "country": "Chile",
-	    "badge": "CLP"
+	    "badge": "CLP",
 	    "birthdate": "09-12-1989",
 	    "wallet": {
 	    	"_id": 1,
@@ -17,7 +17,7 @@ const accountMocks = [
 	            {
 	            	"_id": 1,
 	                "amount": 100000,
-	                "period": 30 // days
+	                "period": 30, // days
 	                "lastUpdate": "12-05-2019 22:15:02",
 	                "createdAt": "12-05-2019 22:15:02"
 	            }
@@ -28,8 +28,8 @@ const accountMocks = [
 	                "startingAmount": 100000,
 	                "finalAmount": 100000,
 	                "interestRate": 0, // 0,02 etc
-	                "period": 30 // days
-	                "lastUpdate": "12-05-2019 22:15:02" 
+	                "period": 30, // days
+	                "lastUpdate": "12-05-2019 22:15:02",
 	                "createdAt": "12-05-2019 22:15:02"
 	            }
 	        ],
