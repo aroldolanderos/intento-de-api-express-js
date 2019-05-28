@@ -6,7 +6,6 @@ const productsService = new ProductsService();
 
 router.get('/', async function(req, res, next) {
     const { tags } = req.query;
-    console.log(req.query);
     try {
         const products = await productsService.getProducts({ tags });
         res.status(200).json({

@@ -4,6 +4,17 @@ const multer = require('multer');
 const upload = multer(); // Para datos tipo multipart/form-data
 const usersApiRouter = require('./routes/api/users');
 const productsApiRouter = require('./routes/api/products');
+const mongo = require("./db/connect");
+
+async function initDB(){
+    const db = await mongo.connect();
+    if (db) {
+        const server = app.listen(8000, function() {
+            console.log(`Listening http://localhost:${server.address().port}`);
+        });
+    }
+}
+
 
 // app
 const app = express();
@@ -21,6 +32,6 @@ app.get('/', function(req, res) {
     res.redirect('/api/products')
 });
 
-const server = app.listen(8000, function() {
-    console.log(`Listening http://localhost:${server.address().port}`);
-});
+initDB();
+
+
